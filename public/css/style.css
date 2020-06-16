@@ -1,0 +1,76 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-align: center;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    margin: 20px;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    height: 100vh;
+    text-align: center;
+    background-image: url(../bg.jpg);
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+form{
+    margin: 20px;
+}
+
+input{
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 4px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+button{
+    font-size: 25px;
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+#country, #confirmed, #recovered, #deaths, #tests, #population{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+@media (max-width: 600px){
+    body{
+        position: relative;
+    }
+    .container{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    h1{
+        font-size: 30px;
+    }
+    input{
+        margin-bottom: 15px;
+        font-size: 20px;
+        margin-right:0 ;
+    }
+    button{
+        width: 150px;
+        font-size: 20px;
+    }
+    form{
+        text-align: center;
+    }
+}
